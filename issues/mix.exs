@@ -4,6 +4,7 @@ defmodule Issues.MixProject do
   def project do
     [
       app: :issues,
+      name: "Issues",
       escript: escript_config(),
       version: "0.1.0",
       elixir: "~> 1.6",
@@ -24,6 +25,8 @@ defmodule Issues.MixProject do
     [
       { :httpoison, "~> 1.0.0" },
       { :poison, "~> 3.1" },
+      { :ex_doc, "~> 0.18.1" },
+      { :earmark , "~> 1.2.4"},
     ]
   end
 
